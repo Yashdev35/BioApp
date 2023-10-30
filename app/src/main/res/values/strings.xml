@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bio App</string>
+    <string name="Uga_buga">Yash Vijay Kumbhkarn\'s bio</string>
+    <string name="bio_of_person"><i>Yash Kumbhkarn</i> is a dedicated and enthusiastic student pursuing a Bachelor\'s degree in Technology (B.Tech) at the prestigious Indian Institute of Technology (IIT) Indore.\n With a passion for technology and software development, Yash has immersed himself in the world of programming, specializing in <b> Java.
+
+        </b> Currently\n Yash is on a journey of exploration and creativity, delving into the exciting field of Android <b>app development</b>. His dedication to learning and his commitment to staying updated with the latest trends in the tech industry make him a promising and aspiring developer.\n
+
+Beyond the classroom, <i>Yash</i> enjoys solving challenging programming problems, participating in coding competitions, and actively engaging with the tech community. He believes in the power of technology to create innovative solutions and looks forward to contributing his skills and knowledge to the ever-evolving world of software development.
+
+        <i>Yash Kumbhkarn</i> is a testament to the spirit of the <b>IIT system</b> , which fosters excellence, innovation, and a passion for learning.</string>
+    <string name="Hobby_hint_text">Enter your hobby</string>
+    <string name="done_text">Done</string>
+    <string name="todo">TODO</string>
+    <string name="image_description">android robot\n</string>
+</resources>

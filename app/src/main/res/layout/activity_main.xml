@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+       <variable
+           name="bio"
+           type="com.example.bioapp.data.Bio" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0288D1"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/nameStyleUgaBuga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{bio.name}"
+            android:textColor="#263238" />
+
+        <EditText
+            android:id="@+id/enter_your_hobbies"
+            style="@style/genral_para_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/Hobby_hint_text"
+            android:inputType="text"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/hobby_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|center_horizontal|top|center_vertical"
+            android:text="@string/done_text" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/good_looking_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/baloo_tammudu_2"
+            android:lineSpacingMultiplier="1.1"
+            android:text="@{bio.hobbies}"
+            tools:visibility="gone" />
+
+        <ScrollView
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/Uga_buga"
+            tools:ignore="DuplicateSpeakableTextCheck">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/good_looking_style"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/bio_of_person"
+                tools:ignore="VisualLintLongText" />
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
